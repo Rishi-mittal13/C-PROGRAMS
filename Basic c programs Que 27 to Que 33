@@ -1,0 +1,135 @@
+ques27)Write a C program to enter base and height of a triangle and find its area.
+ans27)
+#include <stdio.h>
+
+int main()
+{
+    float base, height, area;
+    printf("Enter base of the triangle:");
+    scanf("%f", &base);
+    printf("Enter height of the triangle:");
+    scanf("%f", &height);
+    area = (base * height) / 2;
+    printf("Area of the triangle = %.2f sq.units", rea);
+
+    return 0;
+}
+
+
+
+
+ques28)Write a C program to calculate area of an equilateral triangle.
+ans28)
+#include <stdio.h>
+#include <math.h> // Used for sqrt() function
+
+int main()
+{
+    float side, area;
+    printf("Enter side of an equilateral triangle:");
+    scanf("%f", &side);
+    area = (sqrt(3)/4)*(side*side);
+    printf("Area of equilateral triangle = %.2f sq. units", area);
+
+    return 0;
+}
+
+
+
+
+ques29)Write a C program to enter marks of five subjects and calculate total, average and 
+percentage.
+ans29)
+#include <stdio.h>
+
+int main()
+{
+    float eng, phy, chem, math, comp; 
+    float total, average, percentage;
+
+ 
+    printf("Enter marks of five subjects:");
+    scanf("%f%f%f%f%f",&eng,&phy,&chem,&math,&comp);
+
+    total = eng + phy + chem + math + comp;
+    average = total/5.0;
+    percentage = (total/500.0)*100;
+
+   
+    printf("Total marks = %f", total);
+    printf("Average marks = %f", average);
+    printf("Percentage = %f", percentage);
+
+    return 0;
+}
+
+
+
+
+
+ques30)Write a C program to enter P, T, R and calculate Simple Interest.
+ans30)
+#include <stdio.h>
+
+int main()
+{
+    float principle, time, rate, SI;
+
+    printf("Enter principle (amount):");
+    scanf("%f", &principle);
+
+    printf("Enter time:");
+    scanf("%f", &time);
+
+    printf("Enter rate:");
+    scanf("%f", &rate);
+
+   
+    SI=(principle*time*rate)/100;
+
+    
+    printf("Simple Interest=%f",SI);
+
+    return 0;
+}
+
+
+
+
+ques31)Write a C program to enter P, T, R and calculate Compound Interest.
+ans31)
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float principle, rate, time, CI;
+    printf("Enter principle (amount): ");
+    scanf("%f", &principle);
+    printf("Enter time: ");
+    scanf("%f", &time);
+    printf("Enter rate: ");
+    scanf("%f", &rate);
+    CI = principle* (pow((1 + rate / 100), time));
+    printf("Compound Interest = %f", CI);
+
+    return 0;
+}
+
+
+
+
+ques33)Write a C program to input a mobile number and display 10 digits on the screen
+ans33)
+#include <stdio.h>
+int main(void)
+{
+    printf("My mobile numberis 7\a4\a5\a1\a0\a3\a6\a3\a07\a2\a");
+    return (0);
+}
+
+
+
+
+
+
