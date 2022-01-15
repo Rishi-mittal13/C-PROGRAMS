@@ -124,6 +124,119 @@ void swap(int a, int b)
 
 
 
+//Q:-4 Write a program to find factorial of a number using function of no return type no argument, no return type with argument, return type with no argument and return type with argument.
+
+ // a). no return type no argument.
+   #include<stdio.h>
+   void fact(void)
+   {   int i,z=1,a;
+       printf("enter a no.: ");
+        scanf("%d",&a);
+        for(i=a;i>0;i--)
+          {  z*=i;
+          } 
+         printf("factorial of input no. is %d",z);
+   } 
+     int main()
+     {   
+         fact();
+          return 0;
+     } 
+     
+     
+     
+        
+
+
+
+
+
+
+
+
+
+ // b). no return type argument.
+   #include<stdio.h>
+   void fact(int a)
+   {   int i,z=1;
+        for(i=a;i>0;i--)
+          {  z*=i;
+          } 
+         printf("factorial of input no. is %d",z);
+   } 
+     int main()
+     {   
+      int a;
+      printf("enter a no.: ");
+      scanf("%d",&a);
+         fact(a);
+          return 0;
+     } 
+     
+     
+     
+   
+
+
+
+
+ // c). return type argument.
+   #include<stdio.h>
+   int fact(int a)
+   {   int i,z=1;
+        for(i=a;i>0;i--)
+          {  z*=i;
+          } 
+      return z;   
+   } 
+     int main()
+     {   
+      int a,factorial;
+      printf("enter a no.: ");
+      scanf("%d",&a);
+     factorial= fact(a);
+     printf("%d",factorial);
+          return 0;
+     } 
+
+
+
+
+
+
+
+
+
+ // d). return type no argument.
+   #include<stdio.h>
+   int fact(void)
+   {    int a;
+     printf("enter a no.: ");
+      scanf("%d",&a);
+    
+      int i,z=1;
+        for(i=a;i>0;i--)
+          {  z*=i;
+          } 
+      return z;   
+   } 
+     int main()
+     {   
+      int factorial;
+     factorial= fact();
+     printf("factorial of input no. is : %d",factorial);
+          return 0;
+     } 
+     
+     
+     
+     
+
+
+
+
+
+
 
 
       
