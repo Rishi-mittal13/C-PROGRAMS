@@ -239,4 +239,45 @@ void swap(int a, int b)
 
 
 
+//Write a program to input coefficients of quadratic equation and pass them to function () QUAD. This returnable function computes whether roots of a quadratic equation are real or imaginary.
+
+
+#include<stdio.h>
+void QUAD(void)
+{  int a,b,c,d;
+   printf("entet a,b,c coefficient of quadratic equation : ");
+   scanf("%d%d%d",&a,&b,&c);
+   d=(b*b)-(4*a*c);
+   if(d>0)
+   {  printf("roots of given quadratic equation are real.");
+   } 
+    else if(d<0)
+    
+    { printf("roots of given quadratic equation is imaginary.");
+    } 
+    else 
+      {  printf("root of given quadratic equation is real.");
+    } 
+    
+} 
+  int main()
+  { 
+     QUAD();
+    return 0;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
